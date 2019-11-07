@@ -1,0 +1,80 @@
+body{
+background-color: #ffffff;
+}
+.text{
+border-radius: 30px;
+margin: 3px;
+border-color: blue;
+
+}
+.container{
+margin :50px;
+margin-top:100px; 
+display: flex;
+flex-direction: row;
+
+	
+}
+.logo{
+font-style: italic;
+font-size: 40px;
+font-weight: bold;
+height: 90px;
+line-height: 90px;
+text-align: center;
+border: 2px;
+}
+#btn{
+color: #fff !important;
+text-decoration: none;
+background: #60a3bc;
+padding: 3px;
+border-radius: 30px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+align-self: right;
+width: 70px;
+height: 40px
+
+}
+#btn1:hover{
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+
+}
+.delete{
+color: #fff !important;
+text-decoration: none;
+background:	#cc3333;
+padding: 3px;
+border-radius: 30px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+width: 70px;
+height: 40px
+
+}
+.delete:hover{
+text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+
+}
+.posts{
+border :800px;
+width: 800;
+height: 800;
+}
+
+.oldposts{
+	font-size: 30px;
+
+}
+.postdate{
+font-style: italic;
+}

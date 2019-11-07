@@ -1,0 +1,4 @@
+$('#text').on('click',function(){
+	$()
+})
+
