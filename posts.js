@@ -1,4 +1,4 @@
-var posts = [MakePost('today was a good day'),MakePost('the weather is great to go out'), MakePost('I wanna go for running')];
+var posts = [MakePost('He allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life obliges them over and over again to give birth to themselves.'),MakePost('The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.'), MakePost('If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things '), ];
 //this function will take the text and return it with pu
 function MakePost(text){
 return {
@@ -6,22 +6,22 @@ return {
 	date: new Date()
 }
 }
-
+console.log(posts)
 function displayPosts(){
-	$('.posts').html('<p>Your Posts</p>')
-	posts.forEach(function(post,index){
+		$('.posts').html('<p>Your Posts</p>')
+		posts.forEach(function(post,index){
 		var postdiv = $('<div class= "oldposts"></div>')
-		var deletebtn = $ ('<button class= "delete">delete</button>')
+		var deletebtn = $ ('<div><button class= "delete">delete</button><div>')
 		deletebtn.on('click',function(){
 			console.log(index)
-			posts.splice(index,1)
+			posts.splice(posts.indexOf(post),1)
 			console.log(posts)
 			$(this).parent().remove()
 		})
 		console.log(deletebtn)
 		postdiv.append(post.text)
 		postdiv.append(deletebtn)
-		postdiv.append('<div class ="postdate" >'+post.date.toDateString()+'</div>')
+		postdiv.append('<div class ="postdate" >'+post.date.toDateString()+ '</div>')
 		$('.posts').append(postdiv)
 
 	})
@@ -34,7 +34,7 @@ function addPost(){
 	posts.push(post)
 	displayPosts()
 }else{
-	alert(' bro you can`t do that ')
+	alert(' nah you can`t do that ')
 }}
 $('#btn').on('click',addPost)
 

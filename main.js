@@ -1,4 +1,0 @@
-$('#text').on('click',function(){
-	$()
-})
-
