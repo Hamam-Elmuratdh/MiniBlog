@@ -34,7 +34,7 @@ function addPost(){
 	posts.push(post)
 	displayPosts()
 }else{
-	alert(' nah you can`t do that ')
+	alert('please enter a word')
 }}
 $('#btn').on('click',addPost)
 
