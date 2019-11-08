@@ -21,7 +21,7 @@ function displayPosts(){
 		console.log(deletebtn)
 		postdiv.append(post.text)
 		postdiv.append(deletebtn)
-		postdiv.append('<div class ="postdate" >'+post.date.toDateString()+ '</div>')
+		postdiv.append('<div class ="postdate " >'+post.date.toDateString()+ '</div>')
 		$('.posts').append(postdiv)
 
 	})
@@ -40,3 +40,24 @@ $('#btn').on('click',addPost)
 
 
 
+function searchPosts(){
+	var find = $('#text').val()
+	var found = posts.filter(function(elem,index){
+		return elem.text.indexOf(find)>=0;
+	})
+	$('.posts').html('<p>search results</p>')
+		found.forEach(function(post,index){
+		var postdiv = $('<div class= "oldposts"></div>')
+		var deletebtn = $ ('<div><button class= "delete">delete</button><div>')
+		deletebtn.on('click',function(){
+			posts.splice(posts.indexOf(post),1)
+			$(this).parent().remove()
+		})
+		console.log(deletebtn)
+		postdiv.append(post.text)
+		postdiv.append(deletebtn)
+		postdiv.append('<div class ="postdate " >'+post.date.toDateString()+ '</div>')
+		$('.posts').append(postdiv)
+})}
+
+$('#search').on('click',searchPosts)
