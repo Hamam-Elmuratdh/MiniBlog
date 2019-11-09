@@ -1,4 +1,4 @@
-var posts = [MakePost('He allowed himself to be swayed by his conviction that human beings are not born once and for all on the day their mothers give birth to them, but that life obliges them over and over again to give birth to themselves.'),MakePost('The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.'), MakePost('If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things '), ];
+var posts = [MakePost('In all affairs it is a healthy thing now and then to hang a question mark on the things you have long taken for granted'),MakePost('The fear of death follows from the fear of life. A man who lives fully is prepared to die at any time.'), MakePost('If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things '), ];
 //this function will return the post object which has text and the date
 function MakePost(text){
 return {
